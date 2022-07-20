@@ -1,24 +1,54 @@
-# README
+# アプリケーション名 
+skinolog
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# アプリケーション概要
+スキンケア専用習慣管理アプリ<br>
+日々の肌の変化を写真カレンダーで管理することで、視覚的に変化を実感できる。
 
-Things you may want to cover:
+# URL
+作成中
 
-* Ruby version
+# テスト用アカウント
+・ Basic認証パスワード：2222<br>
+・ Basic認証ID：admin<br>
+・ メールアドレス：test@gmail.com<br>
+・ パスワード：dongwoo1122
 
-* System dependencies
+# 利用方法
+1.トップページ（一覧ページ）のヘッダーからユーザー新規登録を行う<br>
+2.新規習慣目標投稿から、習慣の内容（タイトル・習慣の目的・悩み別カテゴリー）を入力し投稿する
 
-* Configuration
+## 記録投稿機能
+1.新規習慣記録投稿から、記録の内容（写真を添付or写真を撮る・日時選択・コメント・評価カテゴリー）を入力し投稿する
 
-* Database creation
 
-* Database initialization
+# アプリケーションを作成した背景
+学生時代の友人に課題をヒアリングし、「スキンケアの習慣はモチベーション維持できない」という課題を抱えていることが判明した。<br>
+課題を分析した結果、原因について2点の仮説を立てた。<br>
+第1に、肌悩みは一朝一夕で解決できることでなく、また自身で変化が実感しずらいことがモチベーション維持が難しいこと。<br>
+第2に、肌の状態や悩みがそれぞれ異なることから、スキンケアアイテムや方法の”効き目”や実感が人によって変わる。<br>そのために、自身の肌にあった正しいスキンケアなのか、「正しい見極め時」の把握がしずらいこと。<br>
+同様な悩みを抱えている方も多いと推測し、原因を解決するために、視覚的に習慣管理できるアプリケーションを開発することにした。
 
-* How to run the test suite
+# 洗い出した要件
+https://docs.google.com/spreadsheets/d/1VkyY4ClHj1H1Wicb2Gysh1biUZ1v-yXWlJFWPpOwS7s/edit#gid=982722306
 
-* Services (job queues, cache servers, search engines, etc.)
+# 実装予定の機能
+現在、ユーザー機能を実装中。<br>
+今後は習慣目標投稿機能を実装予定。
 
-* Deployment instructions
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/2f1e083a9860d435c99538e6ad5e7d22.png)](https://gyazo.com/2f1e083a9860d435c99538e6ad5e7d22)
 
-* ...
+# 画像遷移図
+[![Image from Gyazo](https://i.gyazo.com/227aa91f821478d3802891f64080b421.png)](https://gyazo.com/227aa91f821478d3802891f64080b421)
+
+# 開発環境
+・フロントエンド<br>
+・バックエンド<br>
+・インフラ<br>
+・テスト<br>
+・テキストエディタ<br>
+
+# ローカルでの動作方法
+
+# 工夫したポイント
