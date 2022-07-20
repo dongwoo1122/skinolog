@@ -6,7 +6,7 @@ skinolog
 日々の肌の変化を写真カレンダーで管理することで、視覚的に変化を実感できる。
 
 # URL
-作成中
+https://skinolog.herokuapp.com/
 
 # テスト用アカウント
 ・ Basic認証パスワード：2222<br>
