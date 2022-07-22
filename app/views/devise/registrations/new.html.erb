@@ -1,0 +1,51 @@
+<div class="contents row">
+  <div class="container">
+    <h2>Sign up</h2>
+    <%= form_with model: @user, url: user_registration_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field">
+       <label class="form-text">ニックネーム</label>
+       <span class="indispensable">必須</span>
+       <%= f.text_area :nickname, class:"input-default", id:"user_nickname", placeholder:"例) skinolog", maxlength:"20" %>
+      </div>
+
+      <div class="field">
+       <label class="form-text">プロフィール画像</label>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"user-image" %>
+      </div>
+
+      <div class="field">
+       <label class="form-text">肌タイプ</label>
+        <%= f.collection_select(:skintype_id, Skintype.all, :id, :name, {}, {class:"select-box", id:"user-skintype"}) %>
+      </div>
+
+      <div class="field">
+       <label class="form-text">メールアドレス</label>
+       <span class="indispensable">必須</span>
+       <%= f.email_field :email, class:"input-default", id:"user_email", placeholder:"PC・携帯どちらでも可", autofocus: true %>
+      </div>
+
+      <div class="field">
+       <label class="form-text">パスワード</label>
+       <span class="indispensable">必須</span>
+       <%= f.password_field :password, class:"input-default", id:"user_password", placeholder:"6文字以上の半角英数字" %>
+      </div>
+
+      <div class="field">
+       <label class="form-text">パスワード(確認)</label>
+       <span class="indispensable">必須</span>
+       <%= f.password_field :password_confirmation, class:"input-default", id:"user_password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
+      </div>
+
+
+      <div class="actions">
+        <%= f.submit "Sign up" %>
+      </div>
+    <% end %>
+  </div>
+</div>
