@@ -99,11 +99,11 @@ body {
   line-height: 1.5;
 }
 a {
-  color: #37952F;
+  color: #2f8995;
   transition: color 0.3s;
 }
 a:hover {
-  color: #70cc33;
+  color: #9dcadb;
   text-decoration: none;
 }
 
@@ -148,7 +148,7 @@ a:hover {
   width: 50px;
   height: 50px;
   border: 0;
-  background: #37952F;
+  background: #2f8995;
   cursor: pointer;
 }
 .hamburger__line {
@@ -203,7 +203,7 @@ a:hover {
   text-decoration: none;
 }
 .gnav__link:hover {
-  color:#37952F;
+  color:#2f8995;
 }
 @media screen and (max-width: 991px) {
   .gnav {
@@ -230,7 +230,7 @@ a:hover {
   /*現在位置の指定をaria-current属性に変更*/
   .gnav__link[aria-current] {
     padding-left: 15px;
-    border-left: 5px solid #37952F;
+    border-left: 5px solid #2f8995;
   }
 }
 @media screen and (min-width: 992px),print {
@@ -253,7 +253,7 @@ a:hover {
     display: block;
     width: 100%;
     height: 4px;
-    background: #37952F;
+    background: #2f8995;
   }
 }
 
@@ -405,7 +405,7 @@ a:hover {
 -----------------------------------*/
 /*標準*/
 .button--default {
-  background: #37952F;
+  background: #2f8995;
   color: #fff;
 }
 .button--default:hover,
@@ -416,7 +416,7 @@ a:hover {
 
 /*枠線*/
 .button--outline {
-  border: 2px solid #37952F;
+  border: 2px solid #2f8995;
   background: #fff;
   color: #333;
 }
@@ -497,11 +497,11 @@ body {
 }
 /*基本リンクスタイル*/
 a {
-  color: #37952F;
+  color: #2f8995;
   transition: color 0.3s;
 }
 a:hover {
-  color: #70cc33;
+  color: #9dcadb;
   text-decoration: none;
 }
 /*強調*/
@@ -541,7 +541,7 @@ a:hover {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #37952F;
+  background: #2f8995;
 }
 /*矢印リンク*/
 .list-arrow > li:not(:first-child) {
@@ -559,8 +559,8 @@ a:hover {
   display: block;
   width: 0.625em;
   height: 0.625em;
-  border-top: 2px solid #37952F;
-  border-right: 2px solid #37952F;
+  border-top: 2px solid #2f8995;
+  border-right: 2px solid #2f8995;
   transform: rotate(45deg);
 }
 .list-arrow a {
@@ -569,7 +569,7 @@ a:hover {
 }
 .list-arrow a:hover,
 .list-arrow a:focus {
-  color: #37952F;
+  color: #2f8995;
 }
 /*数字リンク*/
 .list-decimal > li:not(:first-child) {
@@ -585,12 +585,12 @@ a:hover {
 ----------------------------------------*/
 /*枠囲み（標準）*/
 .frame {
-  border: 2px solid #37952F;
+  border: 2px solid #2f8995;
   padding: 40px;
 }
 .frame__title {
   padding-left: 20px;
-  border-left: 2px solid #37952F;
+  border-left: 2px solid #2f8995;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.5;
@@ -632,7 +632,7 @@ a:hover {
 }
 .page-title__sub {
   display: block;
-  color: #37952F;
+  color: #2f8995;
   font-family: 'Oswald',sans-serif;
   font-size: 20px;
   letter-spacing: 0.2em;
@@ -729,7 +729,7 @@ a:hover {
 ----------------------------------------*/
 .cv-area {
   padding: 50px 0;
-  background: #37952F;
+  background: #2f8995;
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -823,7 +823,7 @@ a:hover {
 .heading-lv2-en__sub {
   display: block;
   margin-top: 0.5em;
-  color: #37952F;
+  color: #2f8995;
   font-size: 16px;
   font-weight: bold;
 }
@@ -852,7 +852,7 @@ a:hover {
   display: block;
   width: 100px;
   margin: 30px auto 0;
-  border-top: 1px solid #37952F;
+  border-top: 1px solid #2f8995;
 }
 .heading-lv2-ja__main {
   display: block;
@@ -890,7 +890,7 @@ a:hover {
   display: block;
   width: 50px;
   margin-top: 20px;
-  border-top: 1px solid #37952F;
+  border-top: 1px solid #2f8995;
 }
 .heading-lv3--center {
   display: flex;
@@ -914,7 +914,7 @@ a:hover {
 -----------------------------------*/
 .heading-lv4 {
   padding-left: 20px;
-  border-left: 2px solid #37952F;
+  border-left: 2px solid #2f8995;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
@@ -932,7 +932,7 @@ a:hover {
 /*小見出し以下
 -----------------------------------*/
 .heading-lv5 {
-  color: #37952F;
+  color: #2f8995;
   font-size: 20px;
   font-weight: bold;
   line-height: 1.5;
@@ -1032,7 +1032,7 @@ a:hover {
 /*hover仕様*/
 a.item:hover,
 a.item:focus {
-  color: #37952F;
+  color: #2f8995;
 }
 a.item:hover .item__image img,
 a.item:focus .item__image img {
@@ -1093,7 +1093,7 @@ a.item:focus .item__image img {
 /*hover仕様（a要素で構築された場合のみ）*/
 a.card:hover,
 a.card:focus {
-  border: 1px solid #70CC33;
+  border: 1px solid #9dcadb;
   color: inherit;
 }
 a.card:hover .card__image img,
@@ -1142,7 +1142,7 @@ a.card:focus .card__btn::after {
   position: relative;
   margin-top: 30px;
   padding: 10px;
-  background: #37952F;
+  background: #2f8995;
   color: #fff;
   text-align: center;
   font-weight: bold;

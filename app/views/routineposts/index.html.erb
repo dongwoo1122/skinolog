@@ -15,36 +15,30 @@
   <script src="js/script.js"></script>
 </head>
 <body>
-  <!-- ①ロール属性：暗黙のロールを持つHTML要素を使用しているため、role属性の追加はしない-->
   <header class="header">
-    <h1 class="header__logo"><a href="/"><img src="img/logo.png" alt="skinolog"></a></h1>
-    <!-- ②アクセシブルな名前：名前が必須のbutton要素に明示的なラベルがないのでaria-labelを付与（開く／閉じるはJSで変更）-->
-    <!-- ⑥動的要素の状態：操作対象であるグロナビをaria-controlesで指定、開閉の初期状態をaria-expandedで指定-->
+    <h1 class="header__logo"><a href="/"><img src="images/logo.jpg" alt="skinolog"></a></h1>
     <button id="hamburger" class="hamburger" aria-label="メニューを開く" aria-controls="gnav" aria-expanded="false">
-      <!-- ②アクセシブルな名前,④装飾的要素：今回はbutton要素自体にaria-labelを付与しているのでラインの方は隠す -->
       <span class="hamburger__line" aria-hidden="true"></span>
     </button>
-    <!-- ②アクセシブルな名前：下層にはnav要素でパンくずがあるので、aria-labelでナビゲーション名を明示 -->
-    <!-- ⑥動的要素の状態：自身の開閉状態をaria-hiddenで示すが、SPレイアウトの場合のみなのでHTMLではなくJSで動的に付与 -->
     <nav id="gnav" class="gnav" aria-label="メインメニュー">
      <% if user_signed_in? %>
       <ul class="gnav__list">
-        <!-- ⑤ナビゲーションの現在位置：aria-current="page"で現在のページ位置を明示 -->
         <li class="gnav__item"><a href="/company/" class="gnav__link" aria-current="page">マイページ</a></li>
         <li class="gnav__item"><a href="/users/sign_out", data-method="delete", class="gnav__link" aria-current="page">ログアウト</a></li>
+      </ul>
      <% else %>
+      <ul class="gnav__list">
         <li class="gnav__item"><a href="/users/sign_up" class="gnav__link" aria-current="page">新規登録</a></li>
         <li class="gnav__item"><a href="/users/sign_in" class="gnav__link">ログイン</a></li>
       </ul>
      <% end %>
     </nav>
   </header>
-  <!-- ①ロール属性：main要素には暗黙のロールがあるので本来role属性は不要だが、IEを対象とするならrole="main"を付与する必要がある -->
   <main class="main-contents">
     <div class="main-visual">
       <div class="main-visual__inner">
-        <p class="main-visual__catch">キャッチコピーの<br>文章がはいりますキャッチコピーの文章が入ります</p>
-        <div class="main-visual__image"><img src="skinolog.png" alt="イメージイラスト"></div>
+        <p class="main-visual__catch">スキンケア専用<br>習慣管理アプリ</p>
+        <div class="main-visual__image"><img src="images/skinolog.jpg" alt="イメージイラスト"></div>
       </div>
     </div>
 
@@ -54,7 +48,6 @@
           <span class="heading-lv2-en__main">Service</span>
         </h2>
         <div class="grid grid--pc3col service-list">
-          <!-- ③読み上げ順：セクション要素（セクショニング・コンテンツ）は見出しから始まるべきなのでサムネイル画像を後ろに移動-->
           <article class="grid__item">
             <a href="#" class="card">
               <div class="card__body">
@@ -62,7 +55,6 @@
                 <p class="card__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                 <p class="card__btn">詳しく見る</p>
               </div>
-              <!-- ④装飾要素の読み上げ：このボタンの矢印は疑似要素のcontent=""でもともと読み上げ対象でないので何もしない -->
               <div class="card__image"><img src="img/ph_service01.jpg" alt=""></div>
             </a>
           </article>
@@ -98,7 +90,6 @@
           <li class="grid__item">
             <a href="#" class="item">
               <div class="item__image"><img src="img/ph_dmy01.jpg" alt=""></div>
-              <!-- ④装飾要素の読み上げ：アイコンフォントが読み上げられないようにaria-hiddenで隠す -->
               <p class="item__caption"><i class="fas fa-chevron-right" aria-hidden="true"></i>商品タイトル</p>
             </a>
           </li>
@@ -124,7 +115,6 @@
         
         <p class="button-center section__button"><a href="./products/" class="button button--outline button--lg">商品紹介について</a></p>
       </section>
-
     </div>
   </main>
   <aside class="cv-area">
@@ -133,7 +123,6 @@
       <p class="cv-area__txt">下記フォームまたは電話番号へお問合わせください</p>
       <p class="cv-area__btn">
         <a href="/contact/" class="button button--lg button--ghost">
-          <!-- ④装飾要素の読み上げ：アイコンフォントが読み上げられないようにaria-hiddenで隠す -->
           <i class="fas fa-envelope" aria-hidden="true"></i>お問合わせフォーム
         </a>
       </p>
